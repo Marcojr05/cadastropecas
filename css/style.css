@@ -1,0 +1,28 @@
+* {
+    margin: 5px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 30px 0px 10px 10px;
+    text-align: center;
+}
+
+
+input{
+    border-radius: 5px;
+}
+
+.campo{
+    padding: 3px;
+    margin: 20px 0px 10px 10px;
+}
+
+.corpo {
+    margin-left: 600px;
+    height: 400px;
+    width: 800px;
+    background-color: rgb(100, 100, 100);
+    color: rgb(228, 232, 235);
+}
