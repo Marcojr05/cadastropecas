@@ -1,54 +1,70 @@
 * {
-    margin: 5px;
+    margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    margin: 30px 0px 10px 10px;
-    text-align: center;
-}
-
-
-input{
-    border-radius: 5px;
-    padding: 10px 20px 0px 200px;
-}
-
-.campo{
-    padding: 3px;
-    margin: 20px 0px 10px 10px;
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 99%;
+    height: 99vh;
 }
 
 .form-box {
+    text-align: center ;
     display: flex;
     flex-direction: column;
-    /* height: 500px; */
     background-color: rgb(100, 100, 100);
+    color: rgb(224, 228, 231);
     border-radius: 10px;
-    width: 50%;
-    min-width: min-content;
+    width: 100%;
+    min-width: 0;
 }
 
-#botao{
-    padding: 10px 20px 10px 20px;
+label{
+    display: inline-block;
+    width: 150px;
+}
+
+input {
+    border-radius: 5px;
+    padding: 0% 5%;
+    margin: 10px;
+}
+
+#botao {
+    padding: 10px 20px;
     background-color: rgb(151, 149, 149);
     color: rgb(225, 229, 233);
+    margin: 20px 0px 10px 10px;
+    width: 40%;
 }
 
- @media only screen and (max-width: 1199px){
+@media only screen and (max-width: 1199px) {
     .campo {
         display: block;
+        padding: 3px;
+        margin: 20px 0px 10px 10px;
     }
-} 
+}
 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .campo {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        display: inline-block; 
+        width: 400px;
+        text-align: center;
     }
-} 
 
+
+    input {
+        box-sizing: border-box;
+        width: 50%;
+    }
+
+    body {
+        margin: 0 auto;
+        width: 50%;
+    }
+}
